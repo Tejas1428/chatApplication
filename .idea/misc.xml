@@ -18,9 +18,15 @@
         <entry key="..\:/Users/Tejas Shah/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/background_icon.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Tejas Shah/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/item_conatainer_received_message.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Tejas Shah/AndroidStudioProjects/ChatApplication/app/src/main/res/layout/item_container_send_message.xml" value="0.2" />
+        <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/drawable/background_content_bottom.xml" value="0.222" />
+        <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/drawable/ic_add.xml" value="0.222" />
+        <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/layout/activity_chat.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/layout/activity_main.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/layout/activity_sign_in.xml" value="0.19293478260869565" />
         <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.1802536231884058" />
+        <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/layout/activity_users.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/layout/item_container_send_message.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/sonal/StudioProjects/chatApplication/app/src/main/res/layout/item_container_user.xml" value="0.24547101449275363" />
       </map>
     </option>
   </component>

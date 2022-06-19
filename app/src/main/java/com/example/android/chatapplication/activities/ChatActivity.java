@@ -21,7 +21,7 @@ public class ChatActivity extends AppCompatActivity {
         loadRecieverDetails();
     }
     private void loadRecieverDetails(){
-//        receiverUser=(User) getIntent().getSerializableExtra(Constant.KEY_USER);
+//         receiverUser=(User) getIntent().getSerializableExtra(Constant.KEY_USER);
 //        binding.textName.setText(receiverUser.name);
     }
 
