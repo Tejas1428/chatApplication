@@ -34,12 +34,13 @@ public class SignInActivity extends AppCompatActivity {
         setListeners();
     }
     private void setListeners(){
-//        binding.textCreateNewAccount.setOnClickListener(v-> startActivity(new Intent(getApplicationContext(),SignUpActivity.class)));
+        binding.textCreateNewAccount.setOnClickListener(v-> startActivity(new Intent(getApplicationContext(),SignUpActivity.class)));
         binding.buttonSignin.setOnClickListener(v-> {
             if(isValidSignInDetails()) {
                 signIn();
             }
         });
+
     }
 
         private void signIn(){
