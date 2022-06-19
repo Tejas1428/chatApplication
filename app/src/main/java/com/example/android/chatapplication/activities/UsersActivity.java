@@ -2,6 +2,7 @@ package com.example.android.chatapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -60,7 +61,7 @@ public class UsersActivity extends AppCompatActivity implements UserListner {
                 users.add(user);
             }
             if(users.size()>0){
-                UsersAdapter usersAdapter=new UsersAdapter(users);
+                UsersAdapter usersAdapter=new UsersAdapter(users,this);
                 binding.usersRecyclerView.setAdapter(usersAdapter);
                 binding.usersRecyclerView.setVisibility(View.VISIBLE);
             }else{
@@ -85,7 +86,14 @@ public class UsersActivity extends AppCompatActivity implements UserListner {
     }
 
     @Override
-    public void userClicked(User user) {
-        Toast.makeText(this, "Clicked in useractivity", Toast.LENGTH_SHORT).show();
+    public void onUserClicked(User user) {
+        Intent intent=new Intent(getApplicationContext(),ChatActivity.class);
+        intent.putExtra(Constant.KEY_USER,user);
+        startActivity(intent);
+        finish();
     }
+    //    @Override
+//    public void userClicked(User user) {
+//        Toast.makeText(this, "Clicked in useractivity", Toast.LENGTH_SHORT).show();
+//    }
 }

@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.android.chatapplication.R;
+import com.example.android.chatapplication.activities.models.User;
 import com.example.android.chatapplication.activities.utilitise.Constant;
 import com.example.android.chatapplication.databinding.ActivityChatBinding;
-import com.google.firebase.firestore.auth.User;
 
 
 public class ChatActivity extends AppCompatActivity {
@@ -17,12 +17,16 @@ public class ChatActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        binding=ActivityChatBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         loadRecieverDetails();
+        setListener();
     }
     private void loadRecieverDetails(){
-//         receiverUser=(User) getIntent().getSerializableExtra(Constant.KEY_USER);
-//        binding.textName.setText(receiverUser.name);
+         receiverUser=(User) getIntent().getSerializableExtra(Constant.KEY_USER);
+        binding.textName.setText(receiverUser.name);
     }
-
+    private void setListener(){
+        binding.imageBack.setOnClickListener(v->onBackPressed());
+    }
 }
