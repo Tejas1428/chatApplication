@@ -50,14 +50,15 @@ public class UsersActivity extends AppCompatActivity implements UserListner {
 
             List<User> users= new ArrayList<>() ;
             for (QueryDocumentSnapshot queryDocumentSnapshot: task.getResult () ) {
-                if ( currentUserId.equals ( queryDocumentSnapshot.getId ())){
+                if ( currentUserId.equals(queryDocumentSnapshot.getId())){
                     continue ;
                 }
-                User user = new User () ;
-                user.name = queryDocumentSnapshot.getString (Constant.KEY_NAME ) ;
-                user.email =queryDocumentSnapshot.getString (Constant.KEY_EMAIL ) ;
-                user.image = queryDocumentSnapshot.getString ( Constant.KEY_IMAGE ) ;
-                user.token = queryDocumentSnapshot.getString ( Constant.KEY_FCM_TOKEN ) ;
+                User user = new User() ;
+                user.name = queryDocumentSnapshot.getString(Constant.KEY_NAME);
+                user.email =queryDocumentSnapshot.getString(Constant.KEY_EMAIL);
+                user.image = queryDocumentSnapshot.getString(Constant.KEY_IMAGE);
+                user.token = queryDocumentSnapshot.getString(Constant.KEY_FCM_TOKEN );
+                user.id=queryDocumentSnapshot.getId();
                 users.add(user);
             }
             if(users.size()>0){
