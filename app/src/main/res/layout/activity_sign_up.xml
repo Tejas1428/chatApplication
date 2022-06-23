@@ -7,31 +7,41 @@
     android:clipToPadding="false"
     android:overScrollMode="never"
     android:padding="@dimen/_24sdp"
-    android:scrollbars="none"
+    android:scrollbars="horizontal"
+
     tools:context=".activities.SignUpActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-        <TextView
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Welcome Back"-->
+<!--            android:textColor="@color/primary_text"-->
+<!--            android:textSize="@dimen/_18ssp"-->
+<!--            android:textStyle="bold"/>-->
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:text="Welcome Back"
-            android:textColor="@color/primary_text"
-            android:textSize="@dimen/_18ssp"
-            android:textStyle="bold"/>
+            android:layout_height="200dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_signup_vector"
+
+            android:layout_gravity="center_horizontal"
+            />
         <FrameLayout
             android:id="@+id/layoutImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp">
-            
+            android:layout_marginTop="@dimen/_20sdp"
+            >
+
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/imageProfile"
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="@dimen/_80sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/background_image"
                 android:scaleType="centerCrop"
                 app:riv_oval="true"

@@ -1,7 +1,5 @@
 package com.example.android.chatapplication.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -23,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class UsersActivity extends AppCompatActivity implements UserListner {
+public class UsersActivity extends BaseActivity implements UserListner {
     private ActivityUsersBinding binding ;
     private PreferenceManager preferenceManager;
     @Override

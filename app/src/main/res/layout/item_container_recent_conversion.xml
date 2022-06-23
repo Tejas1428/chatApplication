@@ -9,7 +9,7 @@
     android:id="@+id/imageProfile"
     android:layout_width = "@dimen/_35sdp"
     android:layout_height = "@dimen/_35sdp"
-    android:background = "@drawable/background_chat_input"
+    android:background = " @drawable/background_image"
     android:scaleType = "centerCrop"
     app:layout_constraintStart_toStartOf = "parent"
     app:layout_constraintTop_toTopOf = "parent"
@@ -18,9 +18,9 @@
     android:id = "@+id/viewSupporter"
     android:layout_width ="1dp"
     android:layout_height = "1dp"
-    app:layout_constraintBottom_toBottomOf = "@id/imageProfile"
-    app:layout_constraintStart_toEndOf = "@id/imageProfile"
-    app:layout_constraintTop_toTopOf = " @id/imageProfile" />
+    app:layout_constraintBottom_toBottomOf ="@id/imageProfile"
+    app:layout_constraintStart_toEndOf ="@id/imageProfile"
+    app:layout_constraintTop_toTopOf ="@id/imageProfile" />
     <TextView
         android:id = "@+id/textName"
         android:layout_width = "0dp"
@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf = "parent"
         app:layout_constraintStart_toEndOf = "@id/imageProfile" />
     <TextView
-        android:id = "@+id/textEmail"
+        android:id = "@+id/textRecentMessage"
         android:layout_width = "0dp"
         android:layout_height = "wrap_content"
         android:layout_marginStart = "@dimen/_8sdp"
@@ -43,7 +43,7 @@
         android:ellipsize = "end"
         android:maxLines = "1"
         android:textColor = "@color/secondary_text"
-        android:textSize = "@dimen/_10ssp"
+        android:textSize = "@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf = "parent"
         app:layout_constraintStart_toEndOf = "@id/imageProfile"
         app:layout_constraintTop_toBottomOf = "@id/viewSupporter"
