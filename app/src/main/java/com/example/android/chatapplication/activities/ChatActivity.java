@@ -212,6 +212,7 @@ public class ChatActivity extends BaseActivity {
         listenAvailabilityOfReceiver();
     }
     public void openDialog(){
-
+        Dialog dialog = new Dialog(true);
+        dialog.show(getSupportFragmentManager(),"dialog");
     }
 }
