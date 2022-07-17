@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
 
+import com.example.android.chatapplication.R;
 import com.example.android.chatapplication.activities.adapters.ChatAdapter;
 import com.example.android.chatapplication.activities.models.ChatMessage;
 import com.example.android.chatapplication.activities.models.User;
@@ -42,6 +43,7 @@ public class ChatActivity extends BaseActivity {
     private FirebaseFirestore database;
     private String conversationId=null;
     private Boolean isReceiverAvailable=false;
+    private View imageInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +53,15 @@ public class ChatActivity extends BaseActivity {
         setListener();
         init();
         listenMessage();
+        imageInfo = findViewById(R.id.imageInfo);
+
+        imageInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
+
     }
     private void init(){
         preferenceManager=new PreferenceManager(getApplicationContext());
@@ -199,5 +210,8 @@ public class ChatActivity extends BaseActivity {
     protected void onResume() {
         super.onResume();
         listenAvailabilityOfReceiver();
+    }
+    public void openDialog(){
+
     }
 }
